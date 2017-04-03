@@ -37,3 +37,49 @@ decode('bells');
 decode('brown');
 decode('croon');
 decode('droop');
+
+function month(nameMonth){
+	switch (nameMonth){
+		case "January":
+		console.log('January has 31 days');
+		break;
+		case "February":
+		console.log('February has 28 days');
+		break;
+		case "March":
+		console.log('March has 31 days');
+		break;
+		case "April":
+		console.log('April has 30 days');
+		break;
+		case "May":
+		console.log('May has 31 days');
+		break;
+		case "June":
+		console.log('June has 30 days');
+		break;
+		case "July":
+		console.log('July has 31 days');
+		break;
+		case "August":
+		console.log('August has 30 days');
+		break;
+		case "September":
+		console.log('September has 30 days');
+		break;
+		case "October":
+		console.log('October has 31 days');
+		break;
+		case "November":
+		console.log('October has 30 days');
+		break;
+		case "December":
+		console.log('October has 31 days');
+		break;
+
+	}
+}
+month('October');
+
+
+
