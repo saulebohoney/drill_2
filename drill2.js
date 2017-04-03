@@ -93,7 +93,13 @@ function RockPaperScissors(userChoice){
     	console.log("Player's rock beats computer's scissors!");
     } else if (player == 2 && computer == 1){
     	console.log("Player's paper beats computer's rock!");
-    } 
+    } else if (player == 2 && computer == 3){
+    	console.log("Computer's scissors beats player's paper");
+    } else if (player == 3 && computer == 1){
+    	console.log("Computer's rock beats player's scissors");
+    } else if (player == 3 && computer == 2){
+    	console.log("Player's scissors beats computer's paper");
+    }
 
 }
 
@@ -102,4 +108,28 @@ RockPaperScissors(2);
 // 1 = rock
 // 2 = paper
 // 3 = scissors
+/*
 
+player 2 comp 3
+player 3 comp 1
+player 3 comp 2
+
+*/
+
+function forloop(num, repeatStr){
+
+	if (typeof repeatStr !== 'string' || typeof num !== 'number' || num < 1) {
+		throw new Error("Invalid Input");
+	} else {
+		for (i = 0; i <=num; i++){
+		console.log(repeatStr);
+		}
+	}
+}
+	 try {
+    forloop(5, 'a valid number');
+}
+    catch(err){
+    	console.log(err.message);
+    }
+    console.log
