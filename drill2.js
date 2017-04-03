@@ -79,7 +79,27 @@ function month(nameMonth){
 
 	}
 }
-month('October');
 
+function RockPaperScissors(userChoice){
+    var computer = 1 + Math.floor((Math.random()*3));
+    var player = userChoice;
+    if (computer == player){
+    	console.log("Tied!");
+    } else if (player == 1 && computer == 2){
+    	console.log("Computer's paper beats player's rock!");
+    } else if (player == 2 && computer == 1){
+    	console.log("Player's paper beats computer's rock!");
+    } else if (player == 1 && computer == 3){
+    	console.log("Player's rock beats computer's scissors!");
+    } else if (player == 2 && computer == 1){
+    	console.log("Player's paper beats computer's rock!");
+    } 
 
+}
+
+RockPaperScissors(2);
+
+// 1 = rock
+// 2 = paper
+// 3 = scissors
 
