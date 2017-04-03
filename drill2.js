@@ -15,4 +15,25 @@ function beyond(num){
 	}
 }
 
+function decode(word){
+	if (word.substring(0,1) == 'a'){
+		return(word.substring(1,2));
+	} else if (word.substring(0,1) == 'b'){
+		return(word.substring(2,3));
+	} else if (word.substring(0,1) == 'c'){
+		return(word.substring(3,4));
+	} else if (word.substring(0,1) == 'd'){
+		return(word.substring(4,5));
+	} else return(' ');
+}
+
+
 beyond(1.5);
+decode('craft');
+decode('block');
+decode('argon');
+decode('meter');
+decode('bells');
+decode('brown');
+decode('croon');
+decode('droop');
